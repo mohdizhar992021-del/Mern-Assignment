@@ -1,0 +1,80 @@
+30-profile-product-card.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Product Card</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background-color: white;
+            width: 280px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: gray;
+        }
+
+        .price {
+            color: green;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/120" alt="Product Image">
+
+        <h2>Smart Watch</h2>
+
+        <p>Stylish and modern smart watch with amazing features.</p>
+
+        <p class="price">₹1,999</p>
+
+        <button>Buy Now</button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+# Assignment 1 – What Happens Between Typing a URL and Seeing the Page?
+
+Uneza
+
+When we type a URL (Uniform Resource Locator) into a web browser and press Enter, several processes take place before the webpage appears on the screen. These processes involve the browser, DNS, the internet, web servers, and rendering engines.
+
+First, the browser checks the URL to identify the website the user wants to visit. Then, the browser uses the Domain Name System (DNS) to translate the domain name, such as `www example.com`, into an IP address. This address helps the browser locate the correct web server. Sometimes, the IP address is already stored in the browser's cache, which saves time.
+
+Next, the browser establishes a connection with the web server. For HTTPS websites, a secure connection is established using TLS to protect the data exchanged between the browser and the server. Once the connection is ready, the browser sends an HTTP request to ask for the webpage.
+
+The web server receives the request, processes it, and sends an HTTP response containing the requested content. This response may include HTML code, status information, and other resources needed to display the webpage. In some cases, the server retrieves information from a database before generating the response.
+
+After receiving the response, the browser begins processing the webpage. It reads the HTML to understand the page structure, uses CSS to apply styles, and executes JavaScript to provide interactive features. It also downloads additional resources, such as images, fonts, and videos, when required.
+
+Finally, the browser renders the webpage by calculating the layout and displaying the content on the screen. The user can now view and interact with the website. Some resources may continue loading even after the main content becomes visible.
+
+In conclusion, displaying a webpage involves several steps, including DNS lookup, connection establishment, HTTP communication, server processing, and browser rendering. All these steps work together to make web browsing possible.

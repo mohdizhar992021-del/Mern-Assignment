@@ -1,0 +1,142 @@
+38-grid-dashboard-areas.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Dashboard Areas</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 70px 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar main";
+            min-height: 100vh;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #444;
+            color: white;
+            padding: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin: 20px 0;
+        }
+
+        .main {
+            grid-area: main;
+            padding: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #333;
+        }
+
+        .card p {
+            color: #007bff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 700px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto 1fr;
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "main";
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <header class="header">
+            My Dashboard
+        </header>
+
+        <aside class="sidebar">
+            <h2>Menu</h2>
+
+            <ul>
+                <li>Home</li>
+                <li>Profile</li>
+                <li>Settings</li>
+                <li>Logout</li>
+            </ul>
+        </aside>
+
+        <main class="main">
+            <h1>Dashboard Overview</h1>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Total Users</h3>
+                    <p>120</p>
+                </div>
+
+                <div class="card">
+                    <h3>Total Orders</h3>
+                    <p>85</p>
+                </div>
+
+                <div class="card">
+                    <h3>Total Sales</h3>
+                    <p>₹5000</p>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+24-design-tokens.html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Design Tokens</title>
+
+    <style>
+
+        /* Design Tokens */
+        :root {
+            --primary-color: blue;
+            --secondary-color: green;
+            --background-color: lightgray;
+            --text-color: black;
+            --font-size: 18px;
+            --spacing: 20px;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+            margin: var(--spacing);
+        }
+
+        h1 {
+            color: var(--primary-color);
+        }
+
+        h2 {
+            color: var(--secondary-color);
+        }
+
+        p {
+            font-size: var(--font-size);
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to My Website</h1>
+
+    <h2>About Design Tokens</h2>
+
+    <p>
+        Design Tokens are reusable values used in CSS.
+        They help maintain a consistent design.
+    </p>
+
+    <button>Click Me</button>
+
+</body>
+</html>

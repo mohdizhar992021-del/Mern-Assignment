@@ -1,0 +1,105 @@
+27-card-variants.html
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Card Variants</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            text-align: center;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px gray;
+        }
+
+        .card h2 {
+            color: blue;
+        }
+
+        .card p {
+            color: black;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .featured {
+            background-color: lightyellow;
+            border: 2px solid orange;
+        }
+
+        .simple {
+            background-color: white;
+        }
+
+        .dark {
+            background-color: darkblue;
+            color: white;
+        }
+
+        .dark h2,
+        .dark p {
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Different Card Variants</h1>
+
+    <div class="container">
+
+        <!-- Simple Card -->
+        <div class="card simple">
+            <h2>Simple Card</h2>
+            <p>This is a simple card design.</p>
+            <button>Read More</button>
+        </div>
+
+        <!-- Featured Card -->
+        <div class="card featured">
+            <h2>Featured Card</h2>
+            <p>This is a featured card design.</p>
+            <button>Explore</button>
+        </div>
+
+        <!-- Dark Card -->
+        <div class="card dark">
+            <h2>Dark Card</h2>
+            <p>This is a dark card design.</p>
+            <button>Learn More</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+# Assignment 2 – Setup Proof (VS Code, Node.js, Live Server)
+
+## Introduction
+
+For this assignment, I installed and configured Visual Studio Code (VS Code), Node.js, and the Live Server extension to create and run web development projects. These tools help me write code, execute JavaScript, and preview webpages in a browser.
+
+## 1. Visual Studio Code (VS Code)
+
+Visual Studio Code is a code editor used to write and manage HTML, CSS, and JavaScript files. It provides features such as syntax highlighting, code completion, debugging, and extensions.
+
+Setup proof: Take a screenshot of VS Code opened on your computer.
+
+## 2. Node.js
+
+Node.js is a JavaScript runtime that allows JavaScript code to run outside a web browser. It is commonly used for backend development and managing development tools.
+
+To verify the installation, I opened the terminal in VS Code and ran these commands:
+
+bash
+
+node -v
+npm -v
+
+The commands display the installed Node.js and npm versions.
+
+Setup proof: Take a screenshot of the terminal showing both version numbers.
+
+## 3. Live Server Extension
+
+Live Server is a VS Code extension that launches a local development server and automatically refreshes the webpage when files are saved.
+
+To set it up, I opened the Extensions panel in VS Code, searched for Live Server, and installed the extension. Then, I created an `index.html` file and selected Open with Live Server to view the webpage in my browser.
+
+Setup proof: Take a screenshot showing the HTML file in VS Code and the webpage running in the browser.
+
+## Conclusion
+
+After setting up VS Code, Node.js, and Live Server, the development environment is ready for basic web development. VS Code is used to write code, Node.js runs JavaScript outside the browser, and Live Server helps preview webpages locally.

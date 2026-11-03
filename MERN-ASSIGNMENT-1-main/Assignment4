@@ -1,0 +1,80 @@
+# Assignment 4 – Repository with at Least Three Meaningful Commits
+
+##Introduction
+
+Git is a version control system used to track changes in files and manage project history. GitHub is an online platform where developers can store and share their repositories. In this assignment, I created a Git repository and made at least three meaningful commits to track the progress of my project.
+
+## Steps Performed
+
+1. Created a project folder
+
+I created a folder named `my-project` and opened it in Visual Studio Code.
+
+2. Initialized the Git repository
+
+I opened the terminal in VS Code and ran the following command:
+
+bash
+
+```
+git init
+```
+
+This command initialized a new Git repository in the project folder.
+
+3. Created project files
+
+I created an `index.html` file containing the basic structure of a webpage.
+
+4. Made three meaningful commits
+
+I used the following commands to save changes to the repository.
+
+Commit 1: Added the initial HTML structure
+
+bash
+
+```
+git add index.html
+git commit -m "Add initial HTML structure"
+```
+
+Commit 2: Added styling to the webpage
+
+After creating a `style.css` file and linking it to the HTML file, I ran:
+
+bash
+
+```
+git add .
+git commit -m "Add CSS styling to webpage"
+```
+
+Commit 3: Added content and improved the webpage
+
+After adding meaningful content to the webpage, I ran:
+
+bash
+
+```
+git add .
+git commit -m "Add webpage content and improve layout"
+```
+
+Each commit records a specific improvement to the project.
+
+## Verification
+
+To verify the commits, I used:
+
+bash
+
+```
+git log --oneline
+```
+
+This command displays the commit history, including commit IDs and messages.
+
+## Conclusion
+
+Through this assignment, I learned how to initialize a Git repository, stage and commit changes, and view the project history. Meaningful commits help track progress, understand changes, and maintain a well-organized development workflow.

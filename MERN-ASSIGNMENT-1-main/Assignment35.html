@@ -1,0 +1,139 @@
+35-flexbox-landing-section.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Landing Section</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #333;
+            color: white;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Landing Section */
+        .landing {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 60px 40px;
+            min-height: 400px;
+            gap: 30px;
+        }
+
+        .content {
+            max-width: 450px;
+        }
+
+        .content h1 {
+            font-size: 40px;
+            color: #333;
+        }
+
+        .content p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .content button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .image img {
+            width: 350px;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 700px) {
+            .landing {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .menu {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">My Website</div>
+
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="landing">
+
+        <div class="content">
+            <h1>Welcome to Our Website</h1>
+
+            <p>
+                We provide the best services to help you
+                learn, grow and achieve your goals.
+            </p>
+
+            <button>Get Started</button>
+        </div>
+
+        <div class="image">
+            <img src="https://via.placeholder.com/350x250"
+                 alt="Landing page illustration">
+        </div>
+
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+# Assignment 3 - Terminal Navigation Practice Sheet
+
+## Introduction
+
+Terminal navigation is the process of moving between folders, viewing files, and managing directories using command-line instructions. It helps developers work efficiently with files and folders. In this assignment, I practiced basic terminal commands using the VS Code terminal.
+
+## Commands and Their Uses
+
+| Command | Purpose |
+| --- | --- |
+| `pwd` | Displays the current working directory. |
+| `ls` | Lists files and folders in the current directory (Linux/macOS). |
+| `dir` | Lists files and folders (Windows Command Prompt). |
+| `cd foldername` | Moves into a specific folder. |
+| `cd ..` | Moves one level up to the parent folder. |
+| `mkdir foldername` | Creates a new folder. |
+| `clear` | Clears the terminal screen (Linux/macOS). |
+| `cls` | Clears the terminal screen (Windows Command Prompt). |
+| `touch file.txt` | Creates an empty file (Linux/macOS and compatible shells). |
+
+## Practice Activity
+
+I practiced the following steps in the terminal:
+
+1. Opened Visual Studio Code and launched the integrated terminal.
+2. Used `pwd` to check the current directory.
+3. Used `ls` or `dir` to view the files and folders.
+4. Created a folder named `Assignment3` using `mkdir Assignment3`.
+5. Entered the folder using `cd Assignment3`.
+6. Used `cd ..` to return to the parent directory.
+7. Cleared the terminal screen using `clear` or `cls`.
+
+## Example Terminal Session
+
+bash
+
+```
+mkdir Assignment3
+cd Assignment3
+cd ..
+```
+
+These commands create a folder, navigate into it, and then return to the parent directory.
+
+## Conclusion
+
+Through this practice sheet, I learned how to navigate directories, list files, create folders, and move between directories using terminal commands. These skills are useful for managing projects and working with development tools such as VS Code and Node.js.
